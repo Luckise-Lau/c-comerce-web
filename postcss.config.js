@@ -2,7 +2,7 @@ module.exports = {
   plugins: [
     {
       'postcss-pxtorem': {
-        rootValue: 50,
+        rootValue: 100,
         propList: ['*'],
         minPixelValue: 1
       }
