@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'searchPage'
+  name: 'SearchPage'
 }
 </script>
 

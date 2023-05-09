@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/home',
-    name: 'homePage',
+    name: 'HomePage',
     component: Home,
     children: [
       {
@@ -19,22 +19,22 @@ const routes = [
   },
   {
     path: '/category',
-    name: 'categoryPage',
+    name: 'CategoryPage',
     component: () => import('@/pages/category/')
   },
   {
     path: '/cart',
-    name: 'cartPage',
+    name: 'CartPage',
     component: () => import('@/pages/cart/')
   },
   {
     path: '/personal',
-    name: 'personalPage',
+    name: 'PersonalPage',
     component: () => import('@/pages/personal/')
   },
   {
     path: '/search',
-    name: 'searchPage',
+    name: 'SearchPage',
     component: () => import('@/pages/search/')
   },
   {

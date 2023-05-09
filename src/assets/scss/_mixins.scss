@@ -1,13 +1,5 @@
 @import "variables";
 
-// flex center
-@mixin flexCenter($direction: row) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: center;
-  align-items: center;
-}
-
 //ellipsis
 @mixin ellipsis() {
   overflow: hidden;
@@ -24,4 +16,19 @@
   -webkit-box-orient: vertical;
   white-space: normal !important;
   word-wrap: break-word;
+}
+
+// flex center
+@mixin flexCenter($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+// flex between
+@mixin flexBetween() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
