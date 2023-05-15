@@ -6,7 +6,16 @@ module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
     host: '0.0.0.0',
-    open: true
+    open: true,
+    proxy: {
+      '/api': {
+        target: 'http://imooc.com',
+        pathRewrite: {
+          '^/api': ''
+        },
+        changeOrigin: true
+      }
+    }
   },
   chainWebpack: config => {
     config

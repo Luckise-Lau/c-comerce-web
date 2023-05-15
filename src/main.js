@@ -1,9 +1,18 @@
+import 'babel-polyfill' // babel-polyfill
+
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+
+import fastclick from 'fastclick' // fastclick
+
 import '@/utils/rem' // rem.js
 import '@/assets/scss/index.scss' // index.scss
+import 'swiper/dist/css/swiper.css' // swiper.css
+
+// 使用 fastclick
+fastclick.attach(document.body)
 
 Vue.config.productionTip = false
 

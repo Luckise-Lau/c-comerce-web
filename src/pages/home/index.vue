@@ -3,19 +3,23 @@
     <header class="g-header-container">
       <home-header/>
     </header>
-    <div></div>
+    <div>
+      <home-slider></home-slider>
+    </div>
     <div class="g-backtop-container"></div>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HomeHeader from './header.vue'
+import HomeHeader from './header'
+import HomeSlider from './slider'
 
 export default {
   name: 'HomePage',
   components: {
-    HomeHeader
+    HomeHeader,
+    HomeSlider
   }
 }
 </script>

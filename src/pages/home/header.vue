@@ -21,7 +21,7 @@ export default {
   @import '@/assets/scss/mixins';
 
   .homeHeader{
-    background-color: trnasparent;
+    background-color: transparent;
 
     .iconfont{
       color: $icon-color-default;
